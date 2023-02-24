@@ -1,0 +1,144 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #A7C7E7;
+}
+nav {
+    position:relative;
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5%;
+    background-color: darkblue;
+}
+.nav {
+    display: inline-block;
+    margin: 2%;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0.5%;
+    font-weight: 700;
+}
+a {
+    color: aliceblue;
+}
+.presentation {
+    width: 100%;
+    margin: 0%;
+    padding: 40% 0%;
+    background-image: url("https://i.pinimg.com/originals/13/96/ed/1396ed77fdd5296495cccd2b9c8d29e9.gif");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+h1 {
+    font-family: 'Gill Sans';
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    -webkit-text-stroke: 0.5px darkblue;
+    filter: drop-shadow(8px 8px 8px #000000)
+}
+h2 {
+    text-align: center;
+    color: darkblue;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10% 5%;
+    justify-content: space-between;
+    text-align: center;
+    grid-column: 0 / 4;
+}
+.grid-item1, .grid-item2, .grid-item3, .grid-item4 {
+    background-color: darkblue;
+    border-radius: 10px;
+    color:aliceblue;
+}  
+img {
+    position: relative;
+    float: left;
+    width: 30%;
+    border-radius: 100%;
+    margin-right: 4%;
+}
+h3 {
+    color: darkblue;
+    
+}
+@media screen and (min-width:700px) {
+    .nav{
+            margin-right: 1em;
+            margin-left: 1em;
+            font-size: 20px;
+        }
+    img {
+        width: 25%;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:900px) {
+    .nav {
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+        font-size: 24px;
+    }
+    .presentation {
+        padding: 30% 0%;
+    }
+    img {
+        position:static;
+    }
+    .aboutMe {
+        margin-top: 50px;
+        float: right;
+    }
+    .profileText {
+        margin-top: 8%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .gridContainer {
+        margin: 5%;
+        gap: 20% 8%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .nav {
+        margin-right: 2em;
+        margin-left: 2em;
+        font-size: 27px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    p {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .nav {
+        margin-right: 2.5em;
+        margin-left: 2.5em;
+        font-size: 30px;
+    }
+    header {
+        padding-top: 0%;
+    }
+    .presentation {
+        padding: 20% 0%;
+    }
+    .gridContainer {
+        margin: 8%;
+        gap: 25% 10%;
+    }
+}
